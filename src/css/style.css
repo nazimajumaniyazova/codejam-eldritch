@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+/* Typing Style */
+.sentence{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.typing-container__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 42px;
+    margin-left: 8px;
+    background-color: white;
+    animation: blink .6s linear infinite alternate;
+}
+/* .typing-cursor{
+    background-color: white;
+    animation: blink .6s linear infinite alternate;
+} */
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+/* End Typing Styling */
+
+.press-key{
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.press-key_active{
+    opacity: 1;
+    visibility: visible; 
+    transition: all .5s ease;  
+}
