@@ -69,3 +69,49 @@ body{
     visibility: visible; 
     transition: all .5s ease;  
 }
+/* INTRO SECTION */
+.intro{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/img/img-4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro::before{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+.intro-text{
+    width: 60%;
+    position: relative;
+    z-index: 10;
+    font-size: 2rem;
+}
+.intro-text > span{
+    border:  1px solid #fff;
+}
+/* Volume */
+.volume{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../assets/img/iconmonstr-sound-thin.svg");
+    background-size: contain;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.volume_off{
+    background-image: url("../assets/img/iconmonstr-sound-off-thin.svg");
+}

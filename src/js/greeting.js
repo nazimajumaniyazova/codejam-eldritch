@@ -32,6 +32,7 @@ async function t(){
     window.addEventListener('keydown',(e)=>{
         if (e.key === ' ') {
             console.log('dd')
+            intro()
         }
     })
     window.addEventListener('touchstart', function() {

@@ -9,19 +9,31 @@
     <title>Eldritch Horror Game</title>
 </head>
 <body>
-    <div class="typing-container">
-        <div class="typing-container__item">
-            <span id="sentence" class="sentence sentence1"></span>
-            <span class="input-cursor sentence1-cursor"></span>
+    <section class="greeting">
+        <div class="typing-container">
+            <div class="typing-container__item">
+                <span id="sentence" class="sentence sentence1"></span>
+                <span class="input-cursor sentence1-cursor"></span>
+            </div>
+            <div class="typing-container__item">
+                <span id="sentence" class="sentence sentence2"></span>
+                <span class="input-cursor sentence2-cursor"></span>
+              </div>
         </div>
-        <div class="typing-container__item">
-            <span id="sentence" class="sentence sentence2"></span>
-            <span class="input-cursor sentence2-cursor"></span>
-          </div>
-    </div>
-    <div class="press-key">Нажмите Enter чтобы продолжить <br>
-    ( На мобильных устройствах коснитесь экрана )
-    </div>
+        <div class="press-key">Нажмите Enter чтобы продолжить <br>
+        ( На мобильных устройствах коснитесь экрана )
+        </div>
+    </section>
+    <section class="intro">
+        <div class="volume"></div>
+        <div class="intro-text">
+            <p>На дворе стоит 1926-й год.</p>
+            <p>Происходят  странные и жуткие происшествия по всей планете.</p>
+            <p>Мир находится на грани исчезновения.</p>
+            <p> По всему миру открываются порталы, из которых вылезают различные чудовища.. Древние культы поднимаются с колен.</p>
+        </div>
+    </section>
     <script src="./src/js/greeting.js"></script>
+    <script src="./src/js/intro.js"></script>
 </body>
 </html>
