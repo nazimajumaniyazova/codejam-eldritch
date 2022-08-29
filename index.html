@@ -9,7 +9,7 @@
     <title>Eldritch Horror Game</title>
 </head>
 <body>
-    <section class="greeting">
+    <!-- <section class="greeting">
         <div class="typing-container">
             <div class="typing-container__item">
                 <span id="sentence" class="sentence sentence1"></span>
@@ -23,17 +23,59 @@
         <div class="press-key">Нажмите Enter чтобы продолжить <br>
         ( На мобильных устройствах коснитесь экрана )
         </div>
-    </section>
+    </section> -->
     <section class="intro">
         <div class="volume"></div>
-        <div class="intro-text">
-            <p>На дворе стоит 1926-й год.</p>
-            <p>Происходят  странные и жуткие происшествия по всей планете.</p>
-            <p>Мир находится на грани исчезновения.</p>
-            <p> По всему миру открываются порталы, из которых вылезают различные чудовища.. Древние культы поднимаются с колен.</p>
+        <!-- <div class="intro-text">
+            <div class="intro-text__1">
+                <p class="intro-text__item1">На дворе стоит 1926-й год.</p>
+                <p class="intro-text__item2">Происходят  странные и жуткие происшествия по всей планете.</p>
+                <p class="intro-text__item3">Мир находится на грани исчезновения.</p>
+                <p class="intro-text__item4"> По всему миру открываются порталы, из которых вылезают различные чудовища.. Древние культы поднимаются с колен.</p>
+            </div>
+            <div class="intro-text__2 intro-text__2_invisible">
+                <p class="intro-text__item5">Ваша задача не допустить пришествия в мир Древнего зла.</p>
+                <p class="intro-text__item6">Для этого решите Загадки Древних.</p>
+                <p class="intro-text__item7">Если проиграете, то мир покроется тьмой и всё человечество исчезнет.</p>
+            </div>
+        </div> -->
+        <div class="ancient-cards">
+            <h2 class="ancient-cards__title">Выберите Древнего</h2>
+            <span class="back-icon"></span>
+            <div class="cards">
+                <div class="card" data-name = 'cthulhu'>
+                    <img src="./src/assets/img/12.png" alt="">
+                </div>
+                <div class="card" data-name = 'shubNiggurath'>
+                    <img src="./src/assets/img/13.png" alt="">
+                </div>
+                <div class="card" data-name = 'iogSothoth'>
+                    <img src="./src/assets/img/14.png" alt="">
+                </div>
+                <div class="card" data-name = 'azathoth'>
+                    <img src="./src/assets/img/15.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="levels">
+            <div class="easy">Легкий</div>
+            <div class="medium">Средний</div>
+            <div class="hard">Сложный</div>
+        </div>
+        <div class="deck">
+            <span class="card-green">0</span>
+            <span class="card-yellow">2</span>
+            <span class="card-blue">3</span>
+            <span class="card-green">0</span>
+            <span class="card-yellow">2</span>
+            <span class="card-blue">3</span>
+            <span class="card-green">0</span>
+            <span class="card-yellow">2</span>
+            <span class="card-blue">3</span>
         </div>
     </section>
-    <script src="./src/js/greeting.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <script src="./src/js/greeting.js"></script> -->
     <script src="./src/js/intro.js"></script>
 </body>
 </html>
