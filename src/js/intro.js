@@ -243,7 +243,7 @@ function displayText(){
 }
 
 cardsContainer.addEventListener('click',(event)=>{
-    cardsArray = []
+
     let eventTarget = event.target.closest('.card')
     introTitle.style.display = 'none'
     backIcon.classList.add('back-icon_active')
@@ -286,25 +286,30 @@ levels.addEventListener('click',(e)=>{
         elem.classList.remove('active-level')
     })
     e.target.classList.add('active-level')
+
     if(e.target.classList.contains('easy')){
+        cardsArray = []
         let blueCardsArray = []
         let yellowCardsArray = []
         let greenCardsArray = []
-        for(let i=0;i<blueCardAmount.length;i++){
+        for(let i=0;i<blueCardAmount;i++){
+            console.log('ls')
           for(let j=0;j<cardsData.length;j++){
-            if(cardsData[j].color==='blue' && cardsData[j].difficulty === 'easy'){
+          
+            if(cardsData[j].color === 'blue' && cardsData[j].difficulty === 'easy'){
+                
                 blueCardsArray.push(cardsData[j].img)
             }
           }
         }
-        for(let i=0;i<yellowCardAmount.length;i++){
+        for(let i=0;i<yellowCardAmount;i++){
             for(let j=0;j<cardsData.length;j++){
               if(cardsData[j].color==='brown' && cardsData[j].difficulty === 'easy'){
                   yellowCardsArray.push(cardsData[j].img)
               }
             }
           }
-          for(let i=0;i<greenCardAmount.length;i++){
+          for(let i=0;i<greenCardAmount;i++){
             for(let j=0;j<cardsData.length;j++){
               if(cardsData[j].color==='green' && cardsData[j].difficulty === 'easy'){
                   greenCardsArray.push(cardsData[j].img)
